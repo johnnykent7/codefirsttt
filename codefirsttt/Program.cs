@@ -13,6 +13,7 @@ namespace codefirsttt
         public string Name { get; set; }
         public int Ani { get; set; }
         public int MyProperty { get; set; }
+        public int MyProperty2 { get; set; }
     }
 
    
