@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{46334361-6482-4098-894E-7708FE5DA3BC}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>codefirsttt</RootNamespace>
+    <AssemblyName>codefirsttt</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Migrations\201807110846478_initial.cs" />
+    <Compile Include="Migrations\201807110846478_initial.Designer.cs">
+      <DependentUpon>201807110846478_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807110854420_insertppl.cs" />
+    <Compile Include="Migrations\201807110854420_insertppl.Designer.cs">
+      <DependentUpon>201807110854420_insertppl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807110920261_addAngajatiTable.cs" />
+    <Compile Include="Migrations\201807110920261_addAngajatiTable.Designer.cs">
+      <DependentUpon>201807110920261_addAngajatiTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807110923182_AddAngajatID1.cs" />
+    <Compile Include="Migrations\201807110923182_AddAngajatID1.Designer.cs">
+      <DependentUpon>201807110923182_AddAngajatID1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807110945484_AddNewVal.cs" />
+    <Compile Include="Migrations\201807110945484_AddNewVal.Designer.cs">
+      <DependentUpon>201807110945484_AddNewVal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807111045298_ChangeDateTime.cs" />
+    <Compile Include="Migrations\201807111045298_ChangeDateTime.Designer.cs">
+      <DependentUpon>201807111045298_ChangeDateTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807111047213_AddPuiutu.cs" />
+    <Compile Include="Migrations\201807111047213_AddPuiutu.Designer.cs">
+      <DependentUpon>201807111047213_AddPuiutu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807111050276_Add2PersoneNoi.cs" />
+    <Compile Include="Migrations\201807111050276_Add2PersoneNoi.Designer.cs">
+      <DependentUpon>201807111050276_Add2PersoneNoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807111120374_ChangeColum.cs" />
+    <Compile Include="Migrations\201807111120374_ChangeColum.Designer.cs">
+      <DependentUpon>201807111120374_ChangeColum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807111128007_AddManincaRasarita.cs" />
+    <Compile Include="Migrations\201807111128007_AddManincaRasarita.Designer.cs">
+      <DependentUpon>201807111128007_AddManincaRasarita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807111130503_DeleteManincaRasaritColumn.cs" />
+    <Compile Include="Migrations\201807111130503_DeleteManincaRasaritColumn.Designer.cs">
+      <DependentUpon>201807111130503_DeleteManincaRasaritColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201807111132080_RemoveClassAngajati.cs" />
+    <Compile Include="Migrations\201807111132080_RemoveClassAngajati.Designer.cs">
+      <DependentUpon>201807111132080_RemoveClassAngajati.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201807110846478_initial.resx">
+      <DependentUpon>201807110846478_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807110854420_insertppl.resx">
+      <DependentUpon>201807110854420_insertppl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807110920261_addAngajatiTable.resx">
+      <DependentUpon>201807110920261_addAngajatiTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807110923182_AddAngajatID1.resx">
+      <DependentUpon>201807110923182_AddAngajatID1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807110945484_AddNewVal.resx">
+      <DependentUpon>201807110945484_AddNewVal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807111045298_ChangeDateTime.resx">
+      <DependentUpon>201807111045298_ChangeDateTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807111047213_AddPuiutu.resx">
+      <DependentUpon>201807111047213_AddPuiutu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807111050276_Add2PersoneNoi.resx">
+      <DependentUpon>201807111050276_Add2PersoneNoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807111120374_ChangeColum.resx">
+      <DependentUpon>201807111120374_ChangeColum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807111128007_AddManincaRasarita.resx">
+      <DependentUpon>201807111128007_AddManincaRasarita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807111130503_DeleteManincaRasaritColumn.resx">
+      <DependentUpon>201807111130503_DeleteManincaRasaritColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807111132080_RemoveClassAngajati.resx">
+      <DependentUpon>201807111132080_RemoveClassAngajati.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
